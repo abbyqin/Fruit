@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;	
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 62.5%;
+	color: #585858
+}
+.pull-left{
+	float: left;
+}
+ul{	
+  overflow: hidden;
+}
+ul,li{
+	list-style-type: none;
+}
+.ul3{
+  width: 96%;
+  margin: 0 auto;
+}
+.ul3 li{
+  width: 50%;
+  float: left;
+  margin-bottom: 1em;
+}
+img{
+	width: 100%;
+}
+.pb1em{
+	padding-bottom: 1em;
+}
+.fixedTool{
+	height: 3em;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+}
+a,a:hover,a:focus,a:visited{
+	text-decoration: none;
+	color: #585858;
+}
