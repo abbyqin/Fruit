@@ -75,11 +75,6 @@ ul{
   width: 90%;
   margin: 0 auto;
 }
-.coupon-ul li{
-  float: left;
-  width: 33.33%
-
-}
 .ban-title {
  margin: 2em auto 1em;
  width: 90%;

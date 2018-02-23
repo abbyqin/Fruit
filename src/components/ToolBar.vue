@@ -25,7 +25,7 @@ export default {
 	width: 25%;
 	float: left;
 	text-align: center;
-	line-height: 3em;
+	line-height: 48px;
 	border-top: 1px solid #b76a1f;
 }
 a,a:hover,a:focus,a:visited{

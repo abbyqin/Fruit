@@ -1,15 +1,17 @@
 <template>
 	<div class="list">
-购物车
+		<cartItem></cartItem>
 		<toolbar toolActive="3"></toolbar>
 	</div>
 </template>
 
 <script>
-import toolbar from '@/components/ToolBar'
+import toolbar from '@/components/ToolBar';
+import cartItem from '@/components/cartItem'
 export default{
 	components:{
-		toolbar
+		toolbar,
+		cartItem
 	}  
 }
 </script>

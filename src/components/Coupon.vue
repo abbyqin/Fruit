@@ -1,14 +1,20 @@
 <template>
 	<ul class="couponWrap">
 		<li v-for="coupon in couponList">
-			<div class="coupon">		
-				<div class="c-top">
-					<div class="ct-4 pull-left">
-						<b class="m-value">{{coupon.price}}</b><span class="rmb">RMB</span>
-					</div>
-				</div>
-				<div class="getBtn">立即领取</div>
-				<div class="shadow"></div>
+			<div class="coupon">
+				<el-row>
+					<el-col :span="9">
+						<div class="grid-content cprice">
+							<b class="m-value">{{coupon.price}}</b>
+						</div>
+					</el-col>
+					<el-col :span="15">
+						<div class="grid-content">		
+							<span class="rmb">RMB</span>
+							<div class="getBtn">立即领取</div>
+						</div>
+					</el-col>
+				</el-row>
 			</div>
 		</li>
 	</ul>
@@ -37,19 +43,21 @@ export default{
 }
 </script>
 <style scoped>
+.coupon-ul li{
+	float: left;
+	width: 33.33%
+}
 .couponWrap{
 	width: 100%;
-	margin: 0 auto
+	margin: 0 auto 1em auto;
 }
 .couponWrap li{
 	float: left;
 	width: 33.33%
 }
 .coupon {
-	width: 5em;
-	height: 5em;
+	width: 96%;
 	background-color: #90ba81;
-	border-radius: 2.5em;
 	position: relative;
 	margin: 0 auto;
 }
@@ -67,37 +75,35 @@ export default{
 }
 .m-value {
 	color: #fff;
-	font-size: 1.5em;
+	font-size: 2em;
 	text-align: right;
 }
 .rmb {
 	color: #fff;
 	font-size: 0.7em;
-	line-height: 5em;
 }
 .text {
 	font-size: 0.3em;
 	font-weight: bold;
 }
 .getBtn {
-	width: 5em;
-	background-color: #fff;
-	font-size: 0.6em;
-	border-radius: 5px;
-	margin: 0 auto;
-	text-align: center;
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	margin-left: -2.5em;
+	   /*  width: 5em;
+	       background-color: #fff; */
+    font-size: 0.5em;
+    border-radius: 5px;
+    margin-top: 5px;
+    /*text-align: center;*/
 }
 .shadow {
 	width: 100%;
-	height: 15px;
+	height: 2em;
 	background-color: #fff;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	border-top: 1px solid #e4e4e4;
+}
+.cprice{
+	text-align: center;
 }
 </style>
